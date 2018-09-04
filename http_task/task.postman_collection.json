@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "b1fdb2d8-32cc-412e-a6ee-ea01fcfdf056",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/search/issues?q=windows+label:bug+language:python+state:open&sort=created&order=asc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ebe950d5f69bac3ec16f74cf58d1ce00f4837389"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/search/issues?q=windows+label:bug+language:python+state:open&sort=created&order=asc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"issues"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "windows+label:bug+language:python+state:open"
+						},
+						{
+							"key": "sort",
+							"value": "created"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " https://api.github.com/search/users?q=sarah+followers:%3E1000",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ebe950d5f69bac3ec16f74cf58d1ce00f4837389"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/search/users?q=sarah+followers:%3E1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "sarah+followers:%3E1000"
+						}
+					]
+				},
+				"description": "search user with over 1000 followers "
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/pcardune/handlebars-loader/issues",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ebe950d5f69bac3ec16f74cf58d1ce00f4837389"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/repos/pcardune/handlebars-loader/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"pcardune",
+						"handlebars-loader",
+						"issues"
+					]
+				},
+				"description": "get an issue"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/ashihminaval/exer/issues",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " token a60f68ad5cabe37e525892c954d5f536800282bb"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test\",\r\n    \"body\": \"the body\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/ashihminaval/exer/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"ashihminaval",
+						"exer",
+						"issues"
+					]
+				},
+				"description": "Create an Issue at my repo "
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/ashihminaval/exer/issues/1/comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ebe950d5f69bac3ec16f74cf58d1ce00f4837389"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"body\": \"Me too\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/ashihminaval/exer/issues/1/comments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"ashihminaval",
+						"exer",
+						"issues",
+						"1",
+						"comments"
+					]
+				},
+				"description": "The comment was added to the issue at my repo"
+			},
+			"response": []
+		}
+	]
+}
